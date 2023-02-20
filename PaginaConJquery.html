@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<body>
+
+    <h2>alerta con Jquery</h2>
+    <button onclick="myFunction()">confirmar</button>
+
+    <p id="demo"></p>
+
+    <script>
+        function myFunction(){
+            var txt;
+            if(confirm("Quieres confirmar!")){
+                txt = "Has confirmado tu peticion"
+            }else{
+                txt = "Cancelaste tu peticion"
+            }
+            document.getElementById("demo").innerHTML = txt;
+        }
+    </script>
+</body>
+</html>
