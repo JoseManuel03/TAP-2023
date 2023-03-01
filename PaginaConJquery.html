@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<body>
+
+    <h2>Pagina de activacion</h2>
+    <button onclick="myFunction()">Modo Creativo</button>
+
+    <p id="demo"></p>
+
+    <script>
+        function myFunction(){
+            var txt;
+            if(confirm("Quieres activar el modo creativo?")){
+                txt = "Activo: true"
+            }else{
+                txt = "Cancelaste el comando"
+            }
+            document.getElementById("demo").innerHTML = txt;
+        }
+    </script>
+    
+    <button type="button" onclick="history.go(-1)";>Regresar al inicio</button>
+</body>
+</html>
